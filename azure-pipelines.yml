@@ -16,7 +16,7 @@ steps:
     azureResourceManagerConnection: 'Free Trial(0db53a07-752d-4def-a73d-cb6f3dc1ea19)'
     subscriptionId: '0db53a07-752d-4def-a73d-cb6f3dc1ea19'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'LibertyDemo'
+    resourceGroupName: 'LibertyDevopsDemo'
     location: 'East US'
     templateLocation: 'Linked artifact'
     csmFile: 'https://github.com/Tawhirimatea/AzureLibertyDemo/template.json'
