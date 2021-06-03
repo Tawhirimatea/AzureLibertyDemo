@@ -20,5 +20,5 @@ steps:
     location: 'East US'
     templateLocation: 'Linked artifact'
     csmFile: 'https://github.com/Tawhirimatea/AzureLibertyDemo/template.json'
-    csmParametersFile: 'https://github.com/Tawhirimatea/AzureLibertyDemo/parameter.json'
+    csmParametersFile: 'https://raw.githubusercontent.com/Tawhirimatea/AzureLibertyDemo/main/parameter.json'
     deploymentMode: 'Incremental'
