@@ -9,15 +9,15 @@
         "value": "Standard_LRS"
       },
       "appServicePlanName": {
-        "value": "LibertyDemoEricPlan"
+        "value": "LibertyDemoAZDevopsPlan"
       },
       "webAppName": {
-        "value": "EricsApp"
+        "value": "EricsDevopsApp"
       },
       "resourceTags": {
         "value": {
           "Environment": "Dev",
-          "Project": "Tutorial"
+          "Project": "Devops"
         }
       }
     }
