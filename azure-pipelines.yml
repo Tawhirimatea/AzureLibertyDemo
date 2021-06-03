@@ -10,10 +10,15 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Generic Liberty Pipeline Demo
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Free Trial(0db53a07-752d-4def-a73d-cb6f3dc1ea19)'
+    subscriptionId: '0db53a07-752d-4def-a73d-cb6f3dc1ea19'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'LibertyDemo'
+    location: 'East US'
+    templateLocation: 'Linked artifact'
+    csmFile: 'https://github.com/Tawhirimatea/AzureLibertyDemo/template.json'
+    csmParametersFile: 'https://github.com/Tawhirimatea/AzureLibertyDemo/parameters.json'
+    deploymentMode: 'Incremental'
